@@ -401,8 +401,8 @@
         <usage name="Military"/>
     </type>
     <type name="AliceBag_Black">
-        <nominal>200</nominal>
-        <lifetime>172800</lifetime>
+        <nominal>100</nominal>
+        <lifetime>800</lifetime>
         <restock>185</restock>
         <min>80</min>
         <quantmin>-1</quantmin>
@@ -413,10 +413,10 @@
         <usage name="Military"/>
     </type>
     <type name="AliceBag_Camo">
-        <nominal>50</nominal>
+        <nominal>100</nominal>
         <lifetime>172800</lifetime>
         <restock>1800</restock>
-        <min>25</min>
+        <min>40</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -437,10 +437,10 @@
         <usage name="Military"/>
     </type>
     <type name="AmmoBox">
-        <nominal>10</nominal>
+        <nominal>30</nominal>
         <lifetime>3888000</lifetime>
         <restock>0</restock>
-        <min>6</min>
+        <min>15</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -467,6 +467,7 @@
 		<usage name="Military" />
 		<usage name="Town" />
 		<usage name="Village"/>
+		<usage name="PetrolStation"/>
     </type>
     <type name="AmmoBox_12gaRubberSlug_10Rnd">
         <nominal>40</nominal>
@@ -3169,14 +3170,14 @@
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="tools"/>
-        <tag name="shelves"/>
-        <usage name="Industrial"/>
+        <tag name="floor"/>
+	<usage name="PetrolStation" />
     </type>
     <type name="Canteen">
-        <nominal>30</nominal>
+        <nominal>60</nominal>
         <lifetime>86400</lifetime>
         <restock>0</restock>
-        <min>20</min>
+        <min>50</min>
         <quantmin>100</quantmin>
         <quantmax>100</quantmax>
         <cost>100</cost>
@@ -3184,6 +3185,7 @@
         <category name="food"/>
         <usage name="Military"/>
         <usage name="Hunting"/>
+		<usage name="Waterpump" />
     </type>
     <type name="CanvasPantsMidi_Beige">
         <nominal>3</nominal>
@@ -4124,10 +4126,10 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
     </type>
     <type name="Colt1911">
-        <nominal>40</nominal>
+        <nominal>60</nominal>
         <lifetime>86400</lifetime>
         <restock>0</restock>
-        <min>20</min>
+        <min>40</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -4607,7 +4609,7 @@
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="weapons"/>
-        <usage name="Town"/>
+        <usage name="Village"/>
     </type>
     <type name="DeerPelt">
         <nominal>0</nominal>
@@ -5070,7 +5072,7 @@
         <value name="Tier4"/>
     </type>
     <type name="FNX45">
-        <nominal>100</nominal>
+        <nominal>60</nominal>
         <lifetime>172800</lifetime>
         <restock>120</restock>
         <min>50</min>
@@ -9227,6 +9229,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="explosives"/>
         <usage name="Military"/>
+		<usage name="PetrolStation" />
     </type>
     <type name="M68Optic">
         <nominal>15</nominal>
@@ -9351,6 +9354,24 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
         <category name="food"/>
     </type>
+	
+	<type name="Mag_AKM_Drum_TEST">
+		    <nominal>35</nominal>
+			<lifetime>172800</lifetime>
+			<restock>1800</restock>
+			<min>15</min>
+			<quantmin>100</quantmin>
+			<quantmax>100</quantmax>
+			<cost>100</cost>
+			<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+			<category name="weapons"/>
+			<tag name="shelves"/>
+			<usage name="Military"/>
+			<value name="Tier2"/>
+			<value name="Tier3"/>
+			<value name="Tier4"/>
+	</type>
+	
     <type name="Mag_1911_7Rnd">
         <nominal>40</nominal>
         <lifetime>86400</lifetime>
@@ -9781,9 +9802,9 @@
         <value name="Tier4"/>
     </type>
     <type name="Magnum">
-        <nominal>25</nominal>
+        <nominal>70</nominal>
         <lifetime>172800</lifetime>
-        <restock>0</restock>
+        <restock>126</restock>
         <min>50</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
@@ -9799,10 +9820,10 @@
         <value name="Tier3"/>
     </type>
     <type name="MakarovIJ70">
-        <nominal>80</nominal>
+        <nominal>50</nominal>
         <lifetime>172800</lifetime>
         <restock>0</restock>
-        <min>60</min>
+        <min>40</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -9810,6 +9831,7 @@
         <category name="weapons"/>
         <tag name="shelves"/>
         <usage name="Town"/>
+		<usage name="Police"/>
         <usage name="Village"/>
         <value name="Tier1"/>
         <value name="Tier2"/>
@@ -11518,7 +11540,7 @@
         <usage name="Military"/>
     </type>
     <type name="PlateCarrierVest">
-        <nominal>200</nominal>
+        <nominal>70</nominal>
         <lifetime>86400</lifetime>
         <restock>380</restock>
         <min>40</min>
@@ -11837,6 +11859,18 @@
         <usage name="Farm"/>
         <usage name="Hunting"/>
     </type>
+    <type name="CannabisSeedsPack">
+        <nominal>70</nominal>
+        <lifetime>7200</lifetime>
+        <restock>300</restock>
+        <min>50</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="food"/>
+        <usage name="Farm"/>
+    </type>
     <type name="PurificationTablets">
         <nominal>50</nominal>
         <lifetime>172800</lifetime>
@@ -12008,6 +12042,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="explosives"/>
         <usage name="Military"/>
+		<usage name="PetrolStation" />
     </type>
     <type name="RadarCap_Black">
         <nominal>15</nominal>
@@ -12440,7 +12475,7 @@
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="tools"/>
     </type>
     <type name="SambucusBerry">
@@ -12524,15 +12559,16 @@
         <category name="weapons"/>
     </type>
     <type name="SawedoffIzh43Shotgun">
-        <nominal>0</nominal>
+        <nominal>25</nominal>
         <lifetime>86400</lifetime>
         <restock>0</restock>
-        <min>0</min>
+        <min>5</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="weapons"/>
+		<usage name="PetrolStation" />
     </type>
     <type name="SawedoffMosin9130">
         <nominal>0</nominal>
@@ -15186,6 +15222,15 @@
         <quantmax>100</quantmax>
         <cost>100</cost>
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+		<category name="food"/>
+		<usage name="Waterpump"/>
+        <usage name="Town"/>
+        <usage name="Village"/>
+		<usage name="Hunting"/>
+        <usage name="Firefighter"/>
+        <usage name="Industrial"/>
+        <usage name="Farm"/>
+        <usage name="Coast"/>
     </type>
     <type name="WaterproofBag_Green">
         <nominal>20</nominal>
@@ -15339,6 +15384,22 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
         <category name="weapons"/>
         <usage name="Hunting"/>
+        <value name="Tier2"/>
+        <value name="Tier3"/>
+        <value name="Tier4"/>
+    </type>
+    <type name="Winchester70_Green">
+        <nominal>150</nominal>
+        <lifetime>172800</lifetime>
+        <restock>0</restock>
+        <min>50</min>
+        <quantmin>-1</quantmin>
+        <quantmax>-1</quantmax>
+        <cost>100</cost>
+        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        <category name="weapons"/>
+        <usage name="Military"/>		
+        <value name="Tier1"/>
         <value name="Tier2"/>
         <value name="Tier3"/>
         <value name="Tier4"/>

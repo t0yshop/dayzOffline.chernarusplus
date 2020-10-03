@@ -54,19 +54,19 @@
 		<hoarder />
 	</type>
 	<type name="AssaultBag_Ttsko">
-		<cargo preset="mixArmy" />
-		<cargo preset="mixArmy" />
-		<cargo preset="mixArmy" />
+		<cargo preset="randomHandgun" />
+		<cargo preset="armyBagLoot" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="AssaultBag_Black">
-		<cargo preset="mixArmy" />
-		<cargo preset="mixArmy" />
-		<cargo preset="mixArmy" />
+		<cargo preset="randomHandgun" />
+		<cargo preset="armyBagLoot" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="AssaultBag_Green">
-		<cargo preset="mixArmy" />
-		<cargo preset="mixArmy" />
-		<cargo preset="mixArmy" />
+		<cargo preset="randomHandgun" />
+		<cargo preset="armyBagLoot" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="DryBag_Orange">
 		<cargo preset="foodVillage" />
@@ -121,7 +121,7 @@
 	</type>
 	<type name="SmershBag">
 		<cargo preset="foodArmy" />
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="ChildBag_Green">
 		<cargo preset="foodVillage" />
@@ -150,7 +150,7 @@
 	</type>
 	<type name="TortillaBag">
 		<cargo preset="foodArmy" />
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="FirstAidKit">
 		<tag name="shelves" />
@@ -158,10 +158,10 @@
 			<item name="BandageDressing" />
 		</cargo>
 		<cargo chance="1">
-			<item name="BloodTestKit" />
+			<item name="BandageDressing" />
 		</cargo>
 		<cargo chance="1">
-			<item name="BloodBagEmpty" />
+			<item name="SalineBagIV" />
 		</cargo>
 		<cargo chance="1">
 			<item name="StartKitIV" />
@@ -230,7 +230,7 @@
 		<cargo preset="toolsIndustrial" />
 	</type>
 	<type name="TTSKOPants">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="HuntingJacket_Autumn">
 		<cargo preset="mixHunter" />
@@ -308,16 +308,16 @@
 		<cargo preset="mixVillage" />
 	</type>
 	<type name="GorkaPants_Summer">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="GorkaPants_Autumn">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="GorkaPants_Flat">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="GorkaPants_PautRev">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="ParamedicJacket_Blue">
 		<cargo preset="toolsMedic" />
@@ -347,10 +347,10 @@
 		<cargo preset="toolsMedic" />
 	</type>
 	<type name="USMCPants_Desert">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="USMCPants_Woodland">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="SlacksPants_Beige">
 		<cargo preset="mixVillage" />
@@ -407,7 +407,7 @@
 		<cargo preset="mixVillage" />
 	</type>
 	<type name="BDUPants">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="NBCPantsGray">
 		<cargo preset="foodVillage" />
@@ -423,7 +423,7 @@
 		<cargo preset="mixVillage" />
 	</type>
 	<type name="Sweater_Green">
-		<cargo preset="mixArmy" />
+		<cargo preset="armyBagLoot" />
 	</type>
 	<type name="Sweater_Red">
 		<cargo preset="mixVillage" />
@@ -606,18 +606,25 @@
 		<cargo preset="toolsPolice" />
 	</type>
 	<type name="PoliceJacket">
-		<cargo preset="toolsPolice" />
+		<cargo preset="handgunMag" />		
+		<cargo preset="randomHandgun" />
 	</type>
 	<type name="PolicePants">
 		<cargo preset="foodVillage" />
-		<cargo preset="toolsPolice" />
+		<cargo preset="toolsPolice" />				
+		<cargo preset="handgunMag" />
+		
 	</type>
 	<type name="PoliceJacketOrel">
-		<cargo preset="toolsPolice" />
+		<cargo preset="toolsPolice" />		
+		<cargo preset="handgunMag" />		
+		<cargo preset="randomHandgun" />
 	</type>
 	<type name="PolicePantsOrel">
 		<cargo preset="foodVillage" />
-		<cargo preset="toolsPolice" />
+		<cargo preset="toolsPolice" />		
+		<cargo preset="handgunMag" />		
+		<cargo preset="randomHandgun" />
 	</type>
 	<type name="PrisonUniformJacket">
 		<cargo chance="0.10">
@@ -770,42 +777,47 @@
 	<!-- -----------------------------ARMY----------------------------- -->
 	<type name="ZmbM_PatrolNormal_Autumn">
 		<cargo preset="foodArmy" />
-		<cargo preset="ammoArmy" />
+		<cargo preset="ammoArmy" />				
+		<cargo preset="randomMag" />
 		<attachments preset="glassesArmy" />
 		<attachments preset="hatsArmy" />
-		<attachments preset="bagsArmy" />
+		<attachments preset="handsArmy" />
 		<attachments preset="vestsArmy" />
 	</type>
 	<type name="ZmbM_PatrolNormal_Flat">
 		<cargo preset="foodArmy" />
-		<cargo preset="ammoArmy" />
+		<cargo preset="ammoArmy" />			
+		<cargo preset="randomMag" />
 		<attachments preset="glassesArmy" />
 		<attachments preset="hatsArmy" />
-		<attachments preset="bagsArmy" />
+		<attachments preset="handsArmy" />
 		<attachments preset="vestsArmy" />
 	</type>
 	<type name="ZmbM_PatrolNormal_PautRev">
 		<cargo preset="foodArmy" />
 		<cargo preset="ammoArmy" />
+		<cargo preset="randomMag" />
 		<attachments preset="glassesArmy" />
 		<attachments preset="hatsArmy" />
-		<attachments preset="bagsArmy" />
+		<attachments preset="handsArmy" />
 		<attachments preset="vestsArmy" />
 	</type>
 	<type name="ZmbM_PatrolNormal_Summer">
 		<cargo preset="foodArmy" />
-		<cargo preset="ammoArmy" />
+		<cargo preset="ammoArmy" />			
+		<cargo preset="randomMag" />
 		<attachments preset="glassesArmy" />
 		<attachments preset="hatsArmy" />
-		<attachments preset="bagsArmy" />
+		<attachments preset="handsArmy" />
 		<attachments preset="vestsArmy" />
 	</type>
 	<type name="ZmbM_SoldierNormal">
 		<cargo preset="foodArmy" />
-		<cargo preset="ammoArmy" />
+		<cargo preset="ammoArmy" />			
+		<cargo preset="randomMag" />
 		<attachments preset="glassesArmy" />
 		<attachments preset="hatsArmy" />
-		<attachments preset="bagsArmy" />
+		<attachments preset="handsArmy" />
 		<attachments preset="vestsArmy" />
 	</type>
 	<!-- -----------------------------City----------------------------- -->
@@ -1760,66 +1772,128 @@
 		<attachments chance="1.00">
 			<item name="SmershBag" chance="1.00" />
 		</attachments>
-		<cargo preset="vestGrenades" />
-		<cargo preset="vestGrenades" />
-		<cargo preset="vestGrenades" />
+		<cargo preset="randomHandgun" />
+		<cargo preset="randomMag" />
+		<cargo preset="randomMag" />
 		<cargo preset="vestGrenades" />
 	</type>
 
 	<type name="UKAssVest_Black">
-		<cargo preset="vestGrenades" />
-		<cargo preset="vestGrenades" />
-		<cargo preset="vestGrenades" />
+		<cargo preset="randomHandgun" />
+		<cargo preset="randomMag" />
+		<cargo preset="randomMag" />
 		<cargo preset="vestGrenades" />
 	</type>		
 	
 	<type name="UKAssVest_Camo">
-		<cargo preset="vestGrenades" />
-		<cargo preset="vestGrenades" />
-		<cargo preset="vestGrenades" />
+		<cargo preset="randomHandgun" />
+		<cargo preset="randomMag" />
+		<cargo preset="randomMag" />
 		<cargo preset="vestGrenades" />
 	</type>		
 	
 	<type name="UKAssVest_Khaki">
-		<cargo preset="vestGrenades" />
-		<cargo preset="vestGrenades" />
-		<cargo preset="vestGrenades" />
+		<cargo preset="randomHandgun" />
+		<cargo preset="randomMag" />
+		<cargo preset="randomMag" />
 		<cargo preset="vestGrenades" />
 	</type>		
 	
 	<type name="AliceBag_Black">
+		<cargo>
+			<item name="Battery9V"/>
+		</cargo>		
+		<cargo>
+			<item name="Battery9V"/>
+		</cargo>
+		<cargo>
+			<item name="BandageDressing"/>
+		</cargo>
 		<cargo chance="1.00">
-			<item name="AirborneMask" chance="1.00"/>
+			<item name="Compass" chance="1.00"/>
+		</cargo>
+	</type>		
+	
+	<type name="AliceBag_Camo">
+		<cargo>
+			<item name="Pickaxe"/>
 		</cargo>	
-		<cargo chance="1.00">
-			<item name="USMCJacket_Woodland" chance="1.00"/>
+		<cargo>
+			<item name="GorkaPants_Summer"/>
 		</cargo>		
-		<cargo chance="1.00">
-			<item name="USMCPants_Woodland" chance="1.00"/>
+		<cargo>
+			<item name="GorkaEJacket_Summer"/>
 		</cargo>		
-		<cargo chance="1.00">
-			<item name="MilitaryBoots_Black" chance="1.00"/>
+		<cargo>
+			<item name="MilitaryBoots_Black"/>
 		</cargo>		
-		<cargo chance="1.00">
-			<item name="MilitaryBelt" chance="1.00"/>
+		<cargo>
+			<item name="MilitaryBelt"/>
 		</cargo>		
-		<cargo chance="1.00">
-			<item name="Mich2001Helmet" chance="1.00"/>
+		<cargo>
+			<item name="Mich2001Helmet"/>
 		</cargo>		
-		<cargo chance="1.00">
-			<item name="OMNOGloves_Brown" chance="1.00"/>
+		<cargo>
+			<item name="OMNOGloves_Brown"/>
 		</cargo>		
-		<cargo chance="1.00">
-			<item name="NylonKnifeSheath" chance="1.00"/>
+		<cargo>
+			<item name="NylonKnifeSheath"/>
 		</cargo>	
-		<cargo chance="1.00">
-			<item name="CombatKnife" chance="1.00"/>
+		<cargo>
+			<item name="CombatKnife"/>
+		</cargo>		
+		<cargo>
+			<item name="Battery9V"/>
+		</cargo>		
+		<cargo>
+			<item name="Battery9V"/>
+		</cargo>
+		<cargo>
+			<item name="BandageDressing"/>
 		</cargo>
 	</type>		
 	
 	
+	<type name="AmmoBox">
+		<cargo>
+			<item name="Ammo_545x39Tracer"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_357"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_45ACP"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_308WinTracer"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_12gaPellets"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_556x45Tracer"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_762x39Tracer"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_762x54Tracer"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_9x19"/>
+		</cargo>
+		<cargo>
+			<item name="Ammo_9x39AP"/>
+		</cargo>
+	</type>
 	<!--END OF ZOMBIES  -->
 	<!--  WEAPONS  -->
+	
+	<type name="GorkaHelmet">
+		<attachments>
+			<item name="GorkaHelmetVisor"/>
+		</attachments>
+	</type>
 	
 	<type name="KobraOptic">
 		<attachments chance="1.00">
@@ -1828,14 +1902,18 @@
 	</type>
 	
 	<type name="NVGoggles">
-		<attachments chance="1.00">
+		<attachments>
 			<item name="Battery9V" chance="1.00" />
 		</attachments>
 	</type>
 	
 	<type name="NVGHeadstrap">
-		<attachments chance="1.00">
-			<item name="NVGoggles" chance="1.00"/>
+		<attachments>
+			<item name="NVGoggles">
+				<attachments>
+					<item name="Battery9V"/>
+				</attachments>
+			</item>
 		</attachments>
 	</type>
 	
@@ -1931,8 +2009,8 @@
 		<attachments chance="1.00">
 			<item name="PistolSuppressor" chance="1.00" />
 		</attachments>
-		<attachments chance="0.10">
-			<item name="TLRLight" chance="1.00" />
+		<attachments>
+			<item name="UniversalLight" />
 		</attachments>
 	</type>
 	<type name="VSS">
@@ -1956,6 +2034,11 @@
 		</attachments>
 	</type>
 	<type name="Winchester70">
+		<attachments chance="1.00">
+			<item name="HuntingOptic" chance="1.00" />
+		</attachments>
+	</type>
+		<type name="Winchester70_Camo">
 		<attachments chance="1.00">
 			<item name="HuntingOptic" chance="1.00" />
 		</attachments>
@@ -2004,15 +2087,14 @@
 		<attachments chance="1.00">
 			<item name="AK_WoodHndgrd" chance="1.00" />
 		</attachments>
-		<attachments chance="0.50">
-			<item name="KashtanOptic" chance="0.30" />
-			<item name="PSO11Optic" chance="0.20" />
+		<attachments> 
+			<item name="KobraOptic" />
 		</attachments>
 		<attachments chance="1.00">
 			<item name="AK_Suppressor" chance="1.00" />
 		</attachments>
 		<attachments chance="1.00">
-			<item name="Mag_AKM_Drum75Rnd" chance="1.00" />
+			<item name="Mag_AKM_Drum_TEST" chance="1.00" />
 		</attachments>
 	</type>
 	<type name="AK74">
@@ -2107,6 +2189,9 @@
 		<attachments chance="1.00">
 			<item name="Mag_STANAGCoupled_30Rnd" chance="1.00" />
 		</attachments>
+		<attachments>
+			<item name="M4_Suppressor"/>
+		</attachments>
 	</type>
 	<type name="FAL">
 		<attachments chance="1.00">
@@ -2128,8 +2213,11 @@
 			<item name="Mag_SVD_10Rnd" chance="1.00" />
 		</attachments>
 		<attachments chance="0.50">
-			<item name="KashtanOptic" chance="0.50" />
+			<item name="KazuarOptic" chance="0.50" />
 			<item name="PSO11Optic" chance="0.30" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="AK_Suppressor" chance="1.00" />
 		</attachments>
 	</type>
 	<type name="Colt1911">

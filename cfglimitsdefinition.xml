@@ -29,7 +29,9 @@
         <usage name="Office"/>
         <usage name="School"/>
         <usage name="Prison"/>
-        <usage name="Lunapark"/>
+        <usage name="Lunapark"/>		
+        <usage name="Waterpump"/>
+        <usage name="PetrolStation"/>
     </usageflags>
     <valueflags>
         <value name="Tier1"/>
