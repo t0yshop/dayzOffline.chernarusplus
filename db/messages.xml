@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <messages>
+    <message>
+        <delay>1</delay>
+        <repeat>60</repeat>
+        <onconnect>1</onconnect>
+        <text>Have fun testing out my server - progression gets wiped often, you can build bases but you'll lose them sooner or later</text>
+    </message>
+	
+<!-- 	<message>
+        <delay>3</delay>
+        <repeat>60</repeat>
+        <onconnect>1</onconnect>
+        <text>Cars don't save their location/loot between resets on this server</text>
+    </message> -->
+	
+<!-- 	<message>
+        <delay>1</delay>
+        <repeat>5</repeat>
+        <onconnect>1</onconnect>
+        <text>Currently changing config files, server is likely to reboot without warning</text>
+    </message>  -->
+	
+	<message>
+        <delay>15</delay>
+        <onconnect>1</onconnect>
+        <text>If you enjoy the server config, it's available at github.com/t0yshop - I plan on making another commit in the following days (21/10/20)</text>
+    </message>
+
 <!--
 See https://community.bistudio.com/wiki/DayZ:Server_Messages for more information
 	

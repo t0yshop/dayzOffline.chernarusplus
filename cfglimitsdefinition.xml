@@ -9,6 +9,7 @@
         <category name="weapons"/>
         <category name="books"/>
         <category name="explosives"/>
+	<category name="waterholder"/>
     </categories>
     <tags>
         <tag name="floor"/>

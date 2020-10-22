@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <events>
+    <event name="ItemPlankPile">
+	<nominal>3</nominal>
+        <min>3</min>
+        <max>50</max>
+        <lifetime>1000000</lifetime>
+        <restock>5</restock>
+        <saferadius>1</saferadius>
+        <distanceradius>100</distanceradius>
+        <cleanupradius>1</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="4" min="3" type="PileOfWoodenPlanks"/>
+        </children>
+    </event>
+    <event name="ItemFal">
+	<nominal>1</nominal>
+        <min>1</min>
+        <max>3</max>
+        <lifetime>1000000</lifetime>
+        <restock>5</restock>
+        <saferadius>1</saferadius>
+        <distanceradius>100</distanceradius>
+        <cleanupradius>1</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="1" min="1" type="FAL"/>
+        </children>
+    </event>
+    <event name="ItemAKM">
+	<nominal>1</nominal>
+        <min>1</min>
+        <max>3</max>
+        <lifetime>1000000</lifetime>
+        <restock>5</restock>
+        <saferadius>0</saferadius>
+        <distanceradius>100</distanceradius>
+        <cleanupradius>1</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="1" min="1" type="AKM"/>
+        </children>
+    </event>
+    <event name="ItemBody1">
+	<nominal>11</nominal>
+        <min>10</min>
+        <max>50</max>
+        <lifetime>1000000</lifetime>
+        <restock>5</restock>
+        <saferadius>0</saferadius>
+        <distanceradius>100</distanceradius>
+        <cleanupradius>0</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="10" min="10" type="SurvivorM_Boris"/>
+        </children>
+    </event>
+    <event name="ItemBody2">
+	<nominal>1</nominal>
+        <min>1</min>
+        <max>50</max>
+        <lifetime>1000000</lifetime>
+        <restock>5</restock>
+        <saferadius>1</saferadius>
+        <distanceradius>100</distanceradius>
+        <cleanupradius>1</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="1" min="1" type="SurvivorF_Irena"/>
+        </children>
+    </event>
+    <event name="VehicleCustom1"> 
+    	<nominal>7</nominal>
+        <min>1</min>
+        <max>50</max>
+        <lifetime>1000000</lifetime>
+        <restock>5</restock>
+        <saferadius>1</saferadius>
+        <distanceradius>100</distanceradius>
+        <cleanupradius>1</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="7" min="7" type="Hatchback_02"/>
+        </children>
+    </event>
     <event name="AmbientHen">
         <nominal>3</nominal>
         <min>0</min>
@@ -576,10 +678,10 @@
     <event name="StaticHeliCrash">
         <nominal>30</nominal>
         <min>30</min>
-        <max>30</max>
+        <max>50</max>
         <lifetime>2500</lifetime>
         <restock>0</restock>
-        <saferadius>1000</saferadius>
+        <saferadius>1</saferadius>
         <distanceradius>1000</distanceradius>
         <cleanupradius>1000</cleanupradius>
         <secondary>InfectedArmy</secondary>
@@ -588,15 +690,15 @@
         <limit>child</limit>
         <active>1</active>
         <children>
-            <child lootmax="30" lootmin="12" max="14" min="8" type="Wreck_Mi8"/>
-            <child lootmax="30" lootmin="12" max="14" min="8" type="Wreck_UH1Y"/>
-            <child lootmax="30" lootmin="12" max="14" min="8" type="Land_Wreck_C130J"/>			
+            <child lootmax="30" lootmin="10" max="15" min="7" type="Wreck_Mi8"/>
+            <child lootmax="30" lootmin="10" max="15" min="7" type="Wreck_UH1Y"/>
+            <child lootmax="30" lootmin="10" max="15" min="7" type="Land_Wreck_C130J"/>			
         </children>
     </event>
     <event name="StaticPoliceCar">
-        <nominal>10</nominal>
-        <min>0</min>
-        <max>0</max>
+        <nominal>50</nominal>
+        <min>50</min>
+        <max>70</max>
         <lifetime>2500</lifetime>
         <restock>0</restock>
         <saferadius>500</saferadius>
@@ -607,8 +709,8 @@
         <limit>child</limit>
         <active>1</active>
         <children>
-            <child lootmax="5" lootmin="3" max="5" min="5" type="Land_Wreck_sed01_aban1_police"/>
-            <child lootmax="5" lootmin="3" max="5" min="5" type="Land_Wreck_sed01_aban2_police"/>
+            <child lootmax="5" lootmin="4" max="25" min="25" type="Land_Wreck_sed01_aban1_police"/>
+            <child lootmax="5" lootmin="4" max="25" min="25" type="Land_Wreck_sed01_aban2_police"/>
         </children>
     </event>
     <event name="TrajectoryApple">
@@ -767,12 +869,12 @@
         </children>
     </event>
     <event name="VehicleCivilianSedan">
-        <nominal>10</nominal>
-        <min>7</min>
-        <max>13</max>
+        <nominal>50</nominal>
+        <min>50</min>
+        <max>70</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
-        <saferadius>500</saferadius>
+        <saferadius>5</saferadius>
         <distanceradius>500</distanceradius>
         <cleanupradius>200</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
@@ -780,18 +882,18 @@
         <limit>mixed</limit>
         <active>1</active>
         <children>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="CivilianSedan"/>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="CivilianSedan_Black"/>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="CivilianSedan_Wine"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="CivilianSedan"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="CivilianSedan_Black"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="CivilianSedan_Wine"/>
         </children>
     </event>
     <event name="VehicleHatchback02">
-        <nominal>10</nominal>
-        <min>7</min>
-        <max>13</max>
+        <nominal>50</nominal>
+        <min>50</min>
+        <max>70</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
-        <saferadius>500</saferadius>
+        <saferadius>5</saferadius>
         <distanceradius>500</distanceradius>
         <cleanupradius>200</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
@@ -799,18 +901,18 @@
         <limit>mixed</limit>
         <active>1</active>
         <children>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="Hatchback_02"/>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="Hatchback_02_Black"/>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="Hatchback_02_Blue"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="Hatchback_02"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="Hatchback_02_Black"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="Hatchback_02_Blue"/>
         </children>
     </event>
     <event name="VehicleOffroadHatchback">
-        <nominal>10</nominal>
-        <min>7</min>
-        <max>13</max>
+        <nominal>50</nominal>
+        <min>50</min>
+        <max>70</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
-        <saferadius>500</saferadius>
+        <saferadius>5</saferadius>
         <distanceradius>500</distanceradius>
         <cleanupradius>200</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
@@ -818,18 +920,18 @@
         <limit>mixed</limit>
         <active>1</active>
         <children>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="OffroadHatchback"/>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="OffroadHatchback_Blue"/>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="OffroadHatchback_White"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="OffroadHatchback"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="OffroadHatchback_Blue"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="OffroadHatchback_White"/>
         </children>
     </event>
     <event name="VehicleSedan02">
-        <nominal>10</nominal>
-        <min>7</min>
-        <max>13</max>
+        <nominal>50</nominal>
+        <min>50</min>
+        <max>70</max>
         <lifetime>300</lifetime>
         <restock>0</restock>
-        <saferadius>500</saferadius>
+        <saferadius>5</saferadius>
         <distanceradius>500</distanceradius>
         <cleanupradius>200</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
@@ -837,9 +939,9 @@
         <limit>mixed</limit>
         <active>1</active>
         <children>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="Sedan_02"/>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="Sedan_02_Grey"/>
-            <child lootmax="0" lootmin="0" max="5" min="3" type="Sedan_02_Red"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="Sedan_02"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="Sedan_02_Grey"/>
+            <child lootmax="0" lootmin="0" max="8" min="5" type="Sedan_02_Red"/>
         </children>
     </event>
 </events>

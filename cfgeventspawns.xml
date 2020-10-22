@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <eventposdef>
+	<event name="ItemPlankPile">	
+		<pos x="4282.89" z="10167.44" />		
+		<pos x="4295.05" z="10515.01" />	
+		<pos x="4654.82" z="10337.54" />	
+	</event>
+	<event name="ItemFal">	
+		<pos x="4307.9" z="10142.2" />		
+	</event>
+	<event name="ItemAKM">	
+		<pos x="4309.9" z="10144.2" />		
+	</event>
+	<event name="ItemBody1">
+		<pos x="4314.00" z="10198.55" />	
+		<pos x="4313.00" z="10199.55" />	
+		<pos x="4314.00" z="10197.55" />	
+		<pos x="4312.00" z="10196.55" />	
+		<pos x="4310.00" z="10195.55" />	
+		<pos x="4172.06 " z="10588.89"/>
+		<pos x="4194.42 " z="10582.57"/>
+		<pos x="4177.90 " z="10591.32"/>
+		<pos x="4087.97 " z="10506.26"/>
+		<pos x="4164.29 " z="10570.91"/>
+	</event>
+	<event name="ItemBody2">
+		<pos x="4278.52" z="10101.81" />	
+	</event>
+	<event name="VehicleCustom1">
+		<pos x="4360.30" z="10235.30" />
+		<pos x="1535.96 " z="13643.12"/>
+		<pos x="4578.44 " z="9654.59"/>
+		<pos x="4159.91 " z="11020.56"/>
+		<pos x="7997.16 " z="14633.81"/>
+		<pos x="2479.47 " z="5101.69"/>
+		<pos x="7691.89 " z="12634.44"/>
+	</event>
 	<event name="VehicleCivilianSedan">
 		<pos x="12071.933594" z="9129.989258" a="317.953339" />
 		<pos x="12302.375001" z="9051.289062" a="60.399284" />

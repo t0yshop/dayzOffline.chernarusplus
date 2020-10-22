@@ -56,11 +56,13 @@
                 Width of each area is exaclty width / density.
                 Height of each area is exaclty height / density.
             -->
-            <grid_density>8</grid_density>
+			
+			
+            <grid_density>4</grid_density>
             <!-- total width of grid in metres -->
-            <grid_width>40.0</grid_width>
+            <grid_width>10.0</grid_width>
             <!-- total height of grid in metres -->
-            <grid_height>40.0</grid_height>
+            <grid_height>10.0</grid_height>
             <!--  minimum distance from buildings for valid spawn point -->
             <min_dist_static>0.5</min_dist_static>
             <!--  maximum distance from buildings used to rate valid spawn point -->
@@ -72,13 +74,31 @@
 
         <!-- centers for grids of spawn points -->
         <generator_posbubbles>
-		<pos x="1529.15" z="13619.30" />
-		<pos x="4579.41" z="9593.34" />
-		<pos x="4174.49" z="11060.42" />
-		<pos x="7985.01" z="14616.31" />
-		<pos x="2495.03" z="5094.40" />
-		<pos x="7738.56" z="12651.94" />
+			
+			
+			
+			<!-- test area -->
+			<!-- <pos x="4281.44" z="10166.47" /> -->
 		
+				<!-- Tisy military camp -->
+				<pos x="1529.15" z="13619.30" />
+				
+				<!-- NWAF barracks -->
+				<pos x="4579.41" z="9593.34" />
+				
+				<!-- NWAF tents -->
+				<pos x="4174.49" z="11060.42" />
+				
+				<!-- kamensk military base -->
+				<pos x="7985.01" z="14616.31" />
+				
+				<!-- zelenogork military base -->
+				<pos x="2495.03" z="5094.40" />
+				
+				<!-- severograd police station -->
+				<pos x="7738.56" z="12651.94" />  
+		
+		 
 		<!-- 
 		        <pos x="8294.81" z="2915.43" />
 		        <pos x="6052.60" z="1868.23" />

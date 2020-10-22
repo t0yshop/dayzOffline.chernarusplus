@@ -3565,7 +3565,7 @@
 		<group name="Land_Misc_Well_Pump_Blue" lootmax="2">
 				<usage name="Waterpump" />
 				<container name="lootFloor">
-						<category name="food" />
+						<category name="waterholder" />
 						<point pos="0.197451 0.161392 -0.196373" range="0.134375" height="0.335938" />
 						<point pos="-0.156863 0.161392 0.186725" range="0.196284" height="0.490710" />
 						<point pos="0.529826 -0.360474 0.467464" range="0.305907" height="0.764768" />
@@ -3576,7 +3576,7 @@
 		<group name="Land_Misc_Well_Pump_Yellow" lootmax="2">
 				<usage name="Waterpump" />
 				<container name="lootFloor" lootmax="2">
-						<category name="food" />
+						<category name="waterholder" />
 						<point pos="-0.212863 -0.199158 0.309016" range="0.100000" height="0.250000" />
 						<point pos="0.317028 -0.198697 0.138531" range="0.168750" height="0.421875" />
 						<point pos="-0.237317 -0.203710 -0.197857" range="0.203125" height="0.507813" />
@@ -8896,7 +8896,7 @@
 		<group name="Land_FuelStation_Build" lootmax="14">
 				<usage name="PetrolStation" />
 				<container name="lootFloor" lootmax="3">
-						<category name="containers" />
+						<category name="waterholder" />
 						<tag name="floor" />
 						<point pos="-1.124429 -1.528511 1.887385" range="0.604736" height="1.511840" />
 						<point pos="0.935938 -1.515587 -0.180200" range="0.749268" height="1.873169" />
@@ -13361,12 +13361,9 @@
 				</container>
 		</group>
 		<group name="Land_FuelStation_Build_Enoch" lootmax="4">
-				<usage name="Industrial" />
-				<usage name="Village" />
+				<usage name="PetrolStation" />
 				<container name="lootFloor" lootmax="2">
-						<category name="tools" />
-						<category name="containers" />
-						<category name="clothes" />
+						<category name="waterholder" />
 						<tag name="floor" />
 						<point pos="-1.326050 -1.578144 1.905517" range="0.635498" height="1.588745" />
 						<point pos="0.691162 -1.578144 -2.169800" range="0.542603" height="1.356506" />
@@ -13374,7 +13371,7 @@
 				</container>
 				<container name="lootshelves" lootmax="2">
 						<category name="tools" />
-						<category name="containers" />
+						<category name="waterholder" />
 						<category name="clothes" />
 						<category name="food" />
 						<category name="books" />
@@ -13391,13 +13388,10 @@
 						<point pos="-0.905884 -1.578144 -1.695190" range="1.014038" height="2.000000" />
 				</container>
 		</group>
-		<group name="Land_Workshop_FuelStation" lootmax="10">
-				<usage name="Industrial" />
-				<usage name="Village" />
-				<container name="lootFloor" lootmax="2">
-						<category name="tools" />
-						<category name="containers" />
-						<category name="clothes" />
+		<group name="Land_Workshop_FuelStation" lootmax="15">
+				<usage name="PetrolStation" />
+				<container name="lootFloor" lootmax="7">
+						<category name="waterholder" />
 						<tag name="floor" />
 						<point pos="-0.636353 -1.267500 1.295776" range="1.040771" height="2.000000" />
 						<point pos="4.607788 -1.267500 1.228027" range="0.973022" height="2.000000" />
@@ -13412,7 +13406,7 @@
 				</container>
 				<container name="lootshelves" lootmax="6">
 						<category name="tools" />
-						<category name="containers" />
+						<category name="waterholder" />
 						<category name="clothes" />
 						<category name="food" />
 						<category name="books" />
